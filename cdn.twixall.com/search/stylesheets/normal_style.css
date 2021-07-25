@@ -1,0 +1,207 @@
+@font-face{
+    font-family: 'regular';
+    src:url('../../fonts/font-regular.ttf')
+}
+@font-face{
+    font-family: 'bold';
+    src:url('../../fonts/font-bold.ttf')
+}
+@font-face{
+    font-family: 'light';
+    src:url('../../fonts/font-light.ttf')
+}
+@font-face{
+    font-family: 'semibold';
+    src:url('../../fonts/font-semibold.ttf')
+}
+@font-face{
+    font-family: 'medium';
+    src:url('../../fonts/font-medium.ttf')
+}
+body{
+    padding: 0;
+    background-color: rgb(255,255,255);
+    margin: 0;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(235, 235, 235, 0.5);
+    line-height: 50px;
+    z-index: 1;
+    top:0;
+    position: fixed;
+}
+#privacy-notice-span-div{
+    display: inline;
+    padding: 10px;
+}
+#privacy-notice-span{
+    font-family: 'medium';
+    font-size:1.125vmax;
+}
+#privacy-page-btn-div{
+    display:inline;
+}
+#privacy-page-btn{
+    font-family: 'semibold';
+    color:white;
+    background-color: rgb(13, 110, 255);
+    border:none;
+    cursor: pointer;
+    padding:8px;
+}
+#privacy-page-btn:hover{
+    background-color: rgb(77, 148, 255);
+}
+#container{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width:100%;
+}
+#primary-container{
+    margin-top:50px;
+}
+#logo-container-div{
+    text-align: center;
+    padding-top: 15vh;
+}
+#logo-img{
+    width:30vw;
+}
+#omnibox-container-main-div{
+    margin:40px 30px 0 30px;
+    text-align: center;
+}
+#omnibox-container-div{
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#omnibox-input{
+    display: inline-block;
+    width: 400px;
+    padding:8px;
+    border:none;
+    border-left:2px solid rgb(0, 97, 189);
+    border-right:none;
+    border-top:2px solid rgb(0, 97, 189);
+    border-bottom:2px solid rgb(0, 97, 189);
+    font-family: 'regular';
+    font-size:15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#omnibox-input::placeholder{
+    font-family: 'light';
+    color:rgb(134, 134, 134);
+}
+#omnibox-submit-btn{
+    display: inline-block;
+    width:70px;
+    color:rgb(126, 126, 126);
+    font-family: 'light';
+    font-size: 15px;
+    padding:8px;
+    border: none;
+    background-color: white;
+    border-top:2px solid rgb(0, 97, 189);
+    border-bottom:2px solid rgb(0, 97, 189);
+    border-right:2px solid rgb(0, 97, 189);
+    border-left:none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#omnibox-submit-btn:hover{
+    background-color: rgb(1, 85, 163);
+    color:white;
+    cursor: pointer;
+}
+#close-notice-span{
+    text-decoration: none;
+    color:rgb(78, 78, 78);
+    font-family: 'bold';
+    position: absolute;
+    right:10px;;
+    cursor: pointer;
+}
+#suggestions{
+    margin-top:15px;
+    font-family: 'medium';
+    z-index: 20;
+}
+.suggestions-a{
+    text-decoration: none;
+    margin:5px;
+    color:rgb(148, 148, 148);
+    font-size: 15px;
+    padding-left:12px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    margin:5px 0 5px 0;
+    padding-right:12px;
+    cursor: pointer;
+}
+.suggestions-a:hover{
+    background-color: rgba(21, 122, 255, 0.6);
+    color:white;
+    border-radius: 20px;
+}
+.suggestions-a:focus{
+    background-color: rgba(21, 122, 255, 0.6);
+    color:white;
+    border-radius: 20px;
+}
+#sug-wrapper{
+    display:none;
+    margin-left:calc((100vw - 470px) / 2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right:calc((100vw - 470px) / 2);
+    padding-right:15px;
+    padding-left: 15px;
+    margin-top:-10px;
+    border-left:2px solid rgb(0, 97, 189);
+    border-right:2px solid rgb(0, 97, 189);
+    border-bottom:2px solid rgb(0, 97, 189);
+    box-shadow: 2px 2px 2px 2px rgb(167, 167, 167);
+    min-height:70px;
+    padding-bottom:10px;
+    max-height: 200px;
+    overflow: auto;
+}
+@media only screen and (max-width:750px){
+    #privacy-notice-span{
+        font-size:1.5vmax;
+    }
+    #privacy-page-btn{
+        font-size:1.5vmax;
+        padding:4px;
+        margin-left:-5px;
+    }
+    #omnibox-input{
+        width:400px;
+    }
+}
+@media only screen and (max-width:600px){
+    #omnibox-input{
+        width:350px;
+    }
+}
+@media only screen and (max-width:550px){
+    #omnibox-input{
+        width:250px;
+    }
+}
+@media only screen and (max-width:450px){
+    #omnibox-input{
+        width:150px;
+    }
+}

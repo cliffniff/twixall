@@ -1,0 +1,103 @@
+#logo {
+    width: 8%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#form {
+    vertical-align: middle;
+    display: inline;
+}
+
+#search {
+    width: 40%;
+    height: 6vh;
+}
+
+#submit {
+    height: 6vh;
+    background-color: rgb(71, 117, 177);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+@media only screen and (max-width:700px) {
+    #logo {
+        width: 5%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #logo {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    #logo {
+        width: 60%;
+    }
+    #search {
+        width: 60%;
+        height: 5.5vh;
+    }
+    #submit {
+        height: 5.5vh;
+    }
+    #container {
+        text-align: center;
+    }
+}
+
+#results {
+    position: absolute;
+    left: 5vw;
+}
+
+.result {
+    display: block;
+}
+
+.result a {
+    text-decoration: none;
+    color: rgb(58, 58, 197);
+    width: 500px;
+}
+
+.result p {
+    color: gray;
+    font-size: 16px;
+    width: 500px;
+    margin: 0;
+}
+
+.result span {
+    font-size: 14px;
+    color: green;
+    width: 500px;
+}
+
+.big_result {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.big_result a {
+    text-decoration: none;
+    color: rgb(58, 58, 197);
+}
+
+.big_result p {
+    color: gray;
+    font-size: 15px;
+    margin: 0;
+    width: 500px;
+}
+
+.big_result span {
+    color: green;
+}
